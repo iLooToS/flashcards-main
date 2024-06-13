@@ -4,7 +4,7 @@ function ThemeItem({ theme }) {
   return (
     <div key={theme.id}>
       <button>
-        <Link to={`/${theme.id}/questions`}>{theme.theme}</Link>
+        <Link to={`/themes/${theme.id}/questions`}>{theme.theme}</Link>
       </button>
     </div>
   );
