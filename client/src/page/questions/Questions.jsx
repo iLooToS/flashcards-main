@@ -7,7 +7,7 @@ function Questions() {
   const [questions, setQuestions] = useState([]);
 
   const axiosQuestions = async () => {
-    const { data } = await request.get('/genres');
+    const { data } = await request.get('/questions');
     if (data.message === 'success') {
       setQuestions(data.questions);
     }
