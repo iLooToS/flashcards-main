@@ -1,8 +1,17 @@
+import { NavLink } from 'react-router-dom';
+
 function Navbar() {
   return (
-    <div>
-      <h1>Navbar</h1>
-    </div>
+    <nav
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+      }}
+    >
+      <NavLink to='/'>Main</NavLink>
+      <NavLink to='/themes'>Themes</NavLink>
+    </nav>
   );
 }
 
