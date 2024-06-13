@@ -14,9 +14,11 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get("/:question", async (req, res) => {
+router.get("/:theme_id", async (req, res) => {
   try {
-    const question = await Questions.findByPk(req.params.question);
+    console.log(req.params);
+    const { theme_id } = req.params
+    const question = await Questions.findAll({where: {theme_id: theme_id}});
     if (question) {
       res.status(200).json({ message: "success", question });
       return;
