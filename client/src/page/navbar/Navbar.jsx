@@ -11,6 +11,7 @@ function Navbar() {
     >
       <NavLink to='/'>Main</NavLink>
       <NavLink to='/themes'>Themes</NavLink>
+      <NavLink to='/questions'>Questions</NavLink>
     </nav>
   );
 }
