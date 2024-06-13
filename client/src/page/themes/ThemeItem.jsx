@@ -1,8 +1,12 @@
+import { Link } from "react-router-dom";
+
 function ThemeItem({ theme }) {
   return (
-      <div key={theme.id}>
-          <h1>{theme.theme}</h1>
-      </div>
+    <div key={theme.id}>
+      <button>
+        <Link to={`/${theme.id}/questions`}>{theme.theme}</Link>
+      </button>
+    </div>
   );
 }
 
