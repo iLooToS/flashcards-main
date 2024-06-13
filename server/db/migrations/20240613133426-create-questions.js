@@ -28,12 +28,14 @@ module.exports = {
         type: Sequelize.TEXT,
       },
       createdAt: {
-        allowNull: false,
+        allowNull: true,
         type: Sequelize.DATE,
+        defaultValue: new Date(),
       },
       updatedAt: {
-        allowNull: false,
+        allowNull: true,
         type: Sequelize.DATE,
+        defaultValue: new Date(),
       },
     });
   },

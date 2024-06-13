@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
     {
       theme_id: {
         allowNull: false,
-        type: Sequelize.INTEGER,
+        type: DataTypes.INTEGER,
         references: {
           model: "Themes",
           key: "id",
@@ -20,19 +20,19 @@ module.exports = (sequelize, DataTypes) => {
       },
       question: {
         allowNull: false,
-        type: Sequelize.TEXT,
+        type: DataTypes.TEXT,
       },
       answer: {
         allowNull: false,
-        type: Sequelize.TEXT,
+        type: DataTypes.TEXT,
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE,
+        type: DataTypes.DATE,
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE,
+        type: DataTypes.DATE,
       },
     },
     {
