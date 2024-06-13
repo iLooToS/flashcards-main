@@ -1,9 +1,9 @@
 const router = require("express").Router();
-const { Question } = require("../../db/models");
+const { Questions } = require("../../db/models");
 
 router.get("/", async (req, res) => {
   try {
-    const questions = await Question.findAll();
+    const questions = await Questions.findAll();
     if (questions) {
       res.status(200).json({ message: "success", questions });
       return;
@@ -16,7 +16,7 @@ router.get("/", async (req, res) => {
 
 router.get("/:question", async (req, res) => {
   try {
-    const question = await Question.findByPk(req.params.question);
+    const question = await Questions.findByPk(req.params.question);
     if (question) {
       res.status(200).json({ message: "success", question });
       return;

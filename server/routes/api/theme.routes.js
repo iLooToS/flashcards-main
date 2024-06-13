@@ -1,9 +1,9 @@
 const router = require("express").Router();
-const { Theme } = require("../../db/models");
+const { Themes } = require("../../db/models");
 
 router.get("/", async (req, res) => {
   try {
-    const themes = await Theme.findAll();
+    const themes = await Themes.findAll();
     if (themes) {
       res.status(200).json({ message: "success", themes });
       return;
@@ -16,7 +16,7 @@ router.get("/", async (req, res) => {
 
 router.get("/:theme", async (req, res) => {
   try {
-    const theme = await Theme.findByPk(req.params.theme);
+    const theme = await Themes.findByPk(req.params.theme);
     if (theme) {
       res.status(200).json({ message: "success", theme });
       return;
