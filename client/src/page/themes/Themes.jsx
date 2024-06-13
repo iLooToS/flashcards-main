@@ -1,19 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import request from '../../services/axios'
 import ThemeItem from './ThemeItem';
 import { useState } from 'react';
-const themesArr = [
-    {
-        id: 1,
-        theme: 'ttt'
-    },
-     {
-        id: 2,
-        theme: 'rrr'
-    }
-]
+
 function Themes() {
-    const [themes, setThemes] = useState(themesArr);
+    const [themes, setThemes] = useState([]);
+
+    const axiosThemes = async () => {
+      const { data } = await request.get('/themes');
+      if (data.message === 'success') {
+        setThemes(data.themes);
+      }
+    };
+  
+    useEffect(() => {
+        axiosThemes();
+    }, []);
     
   return (
       <div>
