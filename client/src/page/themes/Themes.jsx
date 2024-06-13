@@ -3,24 +3,12 @@ import request from '../../services/axios'
 import ThemeItem from './ThemeItem';
 import { useState } from 'react';
 
-function Themes() {
-    const [themes, setThemes] = useState([]);
-
-    const axiosThemes = async () => {
-      const { data } = await request.get('/themes');
-      if (data.message === 'success') {
-        setThemes(data.themes);
-      }
-    };
-  
-    useEffect(() => {
-        axiosThemes();
-    }, []);
+function Themes({ themes, setThemes}) {
     
   return (
       <div>
           {themes.map((theme) => (
-            <ThemeItem theme={theme} key={theme.id} setThemes={setThemes}/>
+            <ThemeItem theme={theme} key={theme.id} setThemes={setThemes} />
         ))}
       </div>
   );
