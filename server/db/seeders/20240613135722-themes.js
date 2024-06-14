@@ -2,9 +2,11 @@
 const arrThemes = [
   {
     theme: " Тема 1",
+    startQuestion: 1,
   },
   {
     theme: " Тема 2",
+    startQuestion: 8,
   },
 ];
 /** @type {import('sequelize-cli').Migration} */

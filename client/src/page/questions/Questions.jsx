@@ -5,7 +5,7 @@ import { Link, useParams } from "react-router-dom";
 function Questions() {
   const { id } = useParams();
   const [question, setQuestion] = useState("");
-  const [answer, SetAnswer] = useState("");
+  const [answer, setAnswer] = useState("");
   const [rightAnswer, setRightAnswer] = useState("");
 
   const axiosThemes = async () => {
@@ -37,7 +37,7 @@ function Questions() {
             placeholder="Ваш ответ"
             type="text"
             value={answer}
-            onChange={(e) => SetAnswer(e.target.value)}
+            onChange={(e) => setAnswer(e.target.value)}
           />
           <button
             width="30px"
