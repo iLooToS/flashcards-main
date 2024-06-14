@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Honk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&family=Roboto+Slab:wght@100..900&family=Rubik+Mono+One&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"); */
+.honk-MainText {
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+  font-variation-settings: "MORF" 15, "SHLN" 50;
+}
+.ThemeContener {
+  display: flex;
+  justify-content: space-evenly;
+}
+.Theme {
+  display: flex;
+  /* background-color: beige;
+  border-radius: 15%;
+  width: 300px;
+  height: 400px; */
+  /* display: flex; */
+  justify-content: center;
+}
+.Theme a {
+  text-decoration: none;
+  color: black;
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+}

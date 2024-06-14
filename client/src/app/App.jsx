@@ -84,6 +84,17 @@ function App() {
     ];
     const router = createBrowserRouter(routes);
     return <RouterProvider router={router} />;
+//   return (
+//     <div>
+//       <Navbar />
+//       <Routes>
+//         <Route path="/" element={<Main />} />
+//         <Route path="/themes" element={<Themes />} />
+//         <Route path="/questions/:id" element={<Questions />} />
+//         <Route path="*" element={<h1>404</h1>} />
+//       </Routes>
+//     </div>
+//   );
 }
 
 export default App;

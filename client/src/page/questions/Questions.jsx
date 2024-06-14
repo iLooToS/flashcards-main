@@ -1,7 +1,7 @@
 import request from "../../services/axios";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-
+import "./Questions.css";
 function Questions() {
   const { id } = useParams();
   const [question, setQuestion] = useState("");
@@ -34,7 +34,7 @@ function Questions() {
     <div>
       <div>
         <p>{question.question}</p>
-        <img src={question.img} />
+        <img className="imgQust" src={question.img} />
         <div>
           <input
             placeholder="Ваш ответ"
@@ -45,13 +45,13 @@ function Questions() {
           <button type="button" onClick={checkAnswer}>
             OK
           </button>
-
+          <br />
           {id == 7 || id == 14 ? (
             <button>
               <Link to="/">Меню</Link>
             </button>
           ) : (
-            <button>
+            <button className='buttonDalee'>
               <Link to={`/questions/${+id + 1}`}>Далее</Link>
             </button>
           )}

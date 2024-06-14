@@ -1,8 +1,9 @@
 import { NavLink } from "react-router-dom";
+import "./Navbar.css";
 
 function Navbar({ user, handleLogout }) {
   return (
-    <nav>
+    <nav className='Navbar'>
       <p>{user ? `Привет, ${user.name}!`: 'Guest'}</p>
       <NavLink to="/">Main</NavLink>
       <NavLink to="/themes">Themes</NavLink>

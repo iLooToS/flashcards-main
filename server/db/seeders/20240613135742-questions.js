@@ -42,13 +42,13 @@ const arrQuestions = [
     answer: "Тутенштейн",
     img: "/img/tytenshten.png",
   },
-  { theme_id: 2, question: "How many?", answer: "nooo", img: "" },
-  { theme_id: 2, question: "Prosto vopros?", answer: "da", img: "" },
-  { theme_id: 2, question: "Vtoroa vopros?", answer: "eshe ras", img: "" },
-  { theme_id: 2, question: "Tretiq vopros?", answer: "opat no", img: "" },
-  { theme_id: 2, question: "The end?", answer: "of corse", img: "" },
-  { theme_id: 2, question: "The end?", answer: "of corse", img: "" },
-  { theme_id: 2, question: "The end?", answer: "of corse", img: "" },
+  { theme_id: 2, question: "что за фрукт/овощ?", answer: "аки", img: "/img/аки.jpeg" },
+  { theme_id: 2, question: "что за фрукт/овощ?", answer: "бам-балан", img: "/img/бам-балан.jpeg" },
+  { theme_id: 2, question: "что за фрукт/овощ?", answer: "карамбола", img: "/img/карамбола.jpeg" },
+  { theme_id: 2, question: "что за фрукт/овощ?", answer: "картофель", img: "/img/картофель.jpeg" },
+  { theme_id: 2, question: "что за фрукт/овощ?", answer: "сметанное яблоко", img: "/img/сметанное яблоко.jpeg" },
+  { theme_id: 2, question: "что за фрукт/овощ?", answer: "топинамбур", img: "img/топинамбур.png" },
+  { theme_id: 2, question: "что за фрукт/овощ?", answer: "чомпу", img: "/img/чомпу.jpeg" },
 ];
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
