@@ -7,7 +7,6 @@ function Questions() {
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");
   const [rightAnswer, setRightAnswer] = useState("");
-
   const axiosThemes = async () => {
     const { data } = await request.get(`/questions/${id}`);
     setRightAnswer("");
@@ -15,15 +14,18 @@ function Questions() {
       setQuestion(data.question);
     }
   };
+
   useEffect(() => {
     axiosThemes();
   }, [id]);
 
   function checkAnswer() {
-    if (answer.toLowerCase() === question.answer) {
+    console.log(answer);
+    console.log(question.answer);
+    if (answer.toLowerCase().trim() === question.answer.toLowerCase()) {
       setRightAnswer("Верно");
     } else {
-      setRightAnswer(`Не верно
+      setRightAnswer(`Не верно!
       Ответ: ${question.answer}`);
     }
   }
@@ -32,6 +34,7 @@ function Questions() {
     <div>
       <div>
         <p>{question.question}</p>
+        <img src={question.img} />
         <div>
           <input
             placeholder="Ваш ответ"
@@ -39,18 +42,12 @@ function Questions() {
             value={answer}
             onChange={(e) => setAnswer(e.target.value)}
           />
-          <button
-            width="30px"
-            height="30px"
-            type="button"
-            onClick={checkAnswer}
-          >
+          <button type="button" onClick={checkAnswer}>
             OK
           </button>
 
-          {id == 5 || id == 10 ? (
+          {id == 7 || id == 14 ? (
             <button>
-              {" "}
               <Link to="/">Меню</Link>
             </button>
           ) : (
