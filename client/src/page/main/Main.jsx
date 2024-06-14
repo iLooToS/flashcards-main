@@ -19,19 +19,23 @@ function Main() {
   return (
     <div className="MainContaner">
       <h1 className="honk-MainText">Welcome to Quiz!!!</h1>
-      <img
+      {/* <img
         src="https://gb.ru/blog/wp-content/uploads/2022/11/shutterstock_1506580442.jpg.webp"
         alt="Quiz photo"
-      />
-      <div>
+      /> */}
+      <div className="ThemeContener">
         {themes.length > 1 && (
           <>
-            <div>
+            <div className="Theme">
               <Link to={`/questions/1`}>
                 <h1>{themes[0].theme}</h1>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyNoprpOz8SKuedEiXmT__-Bv7_dh_xfmTzA&s"
+                  alt="foto"
+                />
               </Link>
             </div>
-            <div>
+            <div className="Theme">
               <Link to={`/questions/8`}>
                 <h1>{themes[1].theme}</h1>
               </Link>
