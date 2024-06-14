@@ -11,9 +11,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/questions/:id" element={<Questions />} />
-        <Route path="/themes/:id/questions" element={<Questions />} />
         <Route path="/themes" element={<Themes />} />
+        <Route path="/questions/:id" element={<Questions />} />
         <Route path="*" element={<h1>404</h1>} />
       </Routes>
     </div>
