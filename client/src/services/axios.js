@@ -5,4 +5,10 @@ const request = axios.create({
   headers: { 'Content-Type': 'application/json' },
 });
 
+let accessToken = '';
+
+export function setAccessToken(newToken) {
+  accessToken = newToken;
+}
+
 export default request;

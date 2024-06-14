@@ -30,7 +30,6 @@ const arrQuestions = [
     answer: "Принцесса Мононоке",
     img: "/img/mononoke.jpg",
   },
-
   {
     theme_id: 1,
     question: "Показывали по тв",
