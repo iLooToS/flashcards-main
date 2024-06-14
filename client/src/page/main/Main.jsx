@@ -16,8 +16,8 @@ function Main() {
     axiosThemes();
   }, []);
   return (
-    <div>
-      <h1>Welcome to Quiz</h1>
+    <div className="MainContaner">
+      <h1 className="MainText">Welcome to Quiz!!!</h1>
       <img
         src="https://gb.ru/blog/wp-content/uploads/2022/11/shutterstock_1506580442.jpg.webp"
         alt="Quiz photo"

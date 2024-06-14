@@ -12,6 +12,14 @@ module.exports = {
       theme: {
         type: Sequelize.TEXT,
       },
+      img: {
+        allowNull: true,
+        type: Sequelize.TEXT,
+      },
+      startQuestion: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+      },
       createdAt: {
         allowNull: true,
         type: Sequelize.DATE,

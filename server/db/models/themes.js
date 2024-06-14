@@ -11,6 +11,14 @@ module.exports = (sequelize, DataTypes) => {
       theme: {
         type: DataTypes.TEXT,
       },
+      img: {
+        allowNull: true,
+        type: DataTypes.TEXT,
+      },
+      startQuestion: {
+        allowNull: false,
+        type: DataTypes.INTEGER,
+      }
       createdAt: {
         allowNull: false,
         type: DataTypes.DATE,
