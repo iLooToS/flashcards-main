@@ -42,7 +42,7 @@ function Questions() {
             value={answer}
             onChange={(e) => setAnswer(e.target.value)}
           />
-          <button type="button" onClick={checkAnswer}>
+          <button className="ok" type="button" onClick={checkAnswer}>
             OK
           </button>
           <br />
@@ -56,7 +56,7 @@ function Questions() {
             </button>
           )}
         </div>
-        <div>{rightAnswer}</div>
+        <div className="answer">{rightAnswer}</div>
       </div>
     </div>
   );

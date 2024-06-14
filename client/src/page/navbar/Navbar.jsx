@@ -4,7 +4,7 @@ import "./Navbar.css";
 function Navbar({ user, handleLogout }) {
   return (
     <nav className='Navbar'>
-      <p>{user ? `Привет, ${user.name}!`: 'Guest'}</p>
+      <p>{user ? `Hi, ${user.name}!`: 'Guest'}</p>
       <NavLink to="/">Main</NavLink>
       <NavLink to="/themes">Themes</NavLink>
       <NavLink to="/signup">SignUp</NavLink>

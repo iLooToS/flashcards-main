@@ -8,6 +8,7 @@
   color: #0000;
   grid-area: "n";
   font-size: 30px;
+  margin-bottom: 40px;
   /* color: aquamarine; */
 }
 .Navbar a {

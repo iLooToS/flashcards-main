@@ -1,9 +1,24 @@
 .imgQust {
-  width: 50%;
+  /* width: 40%; */
+  max-width: 500px;
 }
+
+.buttonDalee {
+  margin-bottom: 30px;
+}
+
+.ok {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
 .buttonDalee a {
   text-decoration: none;
 }
 p {
   font-size: 30px;
+}
+
+.answer {
+  margin-bottom: 50px;
 }
