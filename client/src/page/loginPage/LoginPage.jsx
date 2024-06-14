@@ -1,9 +1,10 @@
-import React from'react';
+import React from "react";
+import "./LoginPage.css";
 function LoginPage({ handleLogin }) {
   return (
-    <div>
-      <h1>LoginPage</h1>
-      <form onSubmit={handleLogin}>
+    <div className="loginContaner">
+      <h1>Login Page</h1>
+      <form className="formaReg" onSubmit={handleLogin}>
         <label className="form-label">Email</label>
         <input
           className="form-control"

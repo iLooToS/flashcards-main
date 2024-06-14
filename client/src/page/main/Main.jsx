@@ -29,10 +29,7 @@ function Main() {
             <div className="Theme">
               <Link to={`/questions/1`}>
                 <h1>{themes[0].theme}</h1>
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyNoprpOz8SKuedEiXmT__-Bv7_dh_xfmTzA&s"
-                  alt="foto"
-                />
+                
               </Link>
             </div>
             <div className="Theme">

@@ -1,0 +1,14 @@
+.loginContaner form {
+  display: flex;
+}
+.formaReg {
+  width: 200px;
+}
+form {
+  width: 400px;
+  position: relative;
+  left: 500px;
+  /* word-wrap: unset; */
+  /* align-items: center; */
+  /* display: flexbox;  */
+}
