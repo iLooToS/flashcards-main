@@ -13,7 +13,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/themes" element={<Themes />} />
         <Route path="/questions/:id" element={<Questions />} />
-        <Route path="*" element={<h1>40 4</h1>} />
+        <Route path="*" element={<h1>404</h1>} />
       </Routes>
     </div>
   );
