@@ -51,3 +51,8 @@ button:disabled {
 button:disabled:before {
   /* filter: grayscale(100%); */
 }
+form {
+  /* width: 400px;
+  display: flex;
+  align-items: center; */
+}

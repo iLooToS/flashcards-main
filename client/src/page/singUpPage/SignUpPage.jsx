@@ -3,7 +3,7 @@ import React from "react";
 function SignUpPage({ handleSignUp }) {
   return (
     <div>
-      <h1>SignUpPage</h1>
+      <h1>SignUp Page</h1>
       <form onSubmit={handleSignUp}>
         <label className="form-label">Name</label>
         <input

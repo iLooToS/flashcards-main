@@ -1,11 +1,11 @@
 "use strict";
 const arrThemes = [
   {
-    theme: " Тема 1",
+    theme: "Cartoons",
     startQuestion: 1,
   },
   {
-    theme: " Тема 2",
+    theme: "Fruits and vegetables",
     startQuestion: 8,
   },
 ];
